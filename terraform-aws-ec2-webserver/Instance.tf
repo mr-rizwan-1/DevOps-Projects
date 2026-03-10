@@ -32,16 +32,9 @@ resource "aws_instance" "Web-Server" {
   }
 
   provisioner "local-exec" {
-    command = "echo Private IP - ${self.private_ip} > webserver_ips.txt"
+    command = "bash Scripts/save_output.sh ${self.id} ${self.public_ip} ${self.private_ip}"
   }
 
-  provisioner "local-exec" {
-    command = "echo Public IP - ${self.public_ip} >> webserver_ips.txt"
-  }
-
-  provisioner "local-exec" {
-    command = "echo Instance ID - ${self.id} >> webserver_ips.txt"
-  }
 }
 
 resource "aws_ec2_instance_state" "web_server_state" {
