@@ -1,0 +1,11 @@
+Outputs
+
+Instance ID
+Public IP
+Private IP
+
+Example output:
+
+WebPublicIP = 3.92.xx.xx
+WebPrivateIP = 172.31.xx.xx
+InstanceID = i-0ab12345
