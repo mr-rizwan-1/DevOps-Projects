@@ -3,3 +3,6 @@
 *.tfstate.*
 *.pem
 *.key
+.terraform.lock.hcl
+*.pub
+dovekey
