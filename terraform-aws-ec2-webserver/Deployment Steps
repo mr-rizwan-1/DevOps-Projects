@@ -1,0 +1,6 @@
+git clone https://github.com/mr-rizwan-1/DevOps-Projects.git
+cd terraform-aws-ec2-webserver
+
+terraform init
+terraform plan
+terraform apply
