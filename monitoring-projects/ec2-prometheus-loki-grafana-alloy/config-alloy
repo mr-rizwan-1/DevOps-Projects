@@ -2,7 +2,7 @@
 
 prometheus.remote_write "default" {
   endpoint {
-    url = "http://172.31.11.43:9090/api/v1/write"
+    url = "http://<PROMETHEUS-EC2-PRIVATE-IP>:9090/api/v1/write"
   }
 }
 
@@ -41,6 +41,6 @@ loki.source.file "log_scrape" {
 
 loki.write "loki" {
   endpoint {
-    url = "http://172.31.15.39:3100/loki/api/v1/push"
+    url = "http://<LOKI-EC2-PRIVATE-IP>:3100/loki/api/v1/push"
   }
 }
