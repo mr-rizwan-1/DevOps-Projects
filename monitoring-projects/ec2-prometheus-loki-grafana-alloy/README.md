@@ -7,7 +7,7 @@
 
 ## 📌 Table of Contents
 
-- [Architecture Overview](#architecture-overview)
+- [Architecture Overview](#🏗️-Architecture-Overview)
 - [Port Reference](#port-reference)
 - [Infrastructure](#infrastructure)
 - [Setup Guide](#setup-guide)
