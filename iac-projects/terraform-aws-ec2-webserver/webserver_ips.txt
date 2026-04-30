@@ -1,0 +1,9 @@
+172.31.37.84
+3.86.49.121
+i-064bcbcc5e6d1591c
+Private IP - 172.31.32.56
+Public IP - 174.129.44.216
+Instance ID - i-07336f6b58acb5a5d
+Private IP - 172.31.32.78
+Public IP - 23.20.114.178
+Instance ID - i-09a7478cae38c5d8a
