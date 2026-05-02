@@ -161,7 +161,7 @@ cd DevOps-Projects/iac-projects/terraform-aws-ec2-webserver
 aws configure
 # AWS Access Key ID     : <your-access-key>
 # AWS Secret Access Key : <your-secret-key>
-# Default region        : ap-south-1
+# Default region        : us-east-1
 # Output format         : json
 ```
 
@@ -183,8 +183,8 @@ ssh-keygen -t rsa -b 4096 -f dove-key
 Edit `vars.tf` with your values:
 
 ```hcl
-region = "ap-south-1"     # your AWS region
-zone1  = "ap-south-1a"    # availability zone
+region = "us-east-1"     # your AWS region
+zone1  = "us-east-1a"    # availability zone
 ```
 
 > Ensure the AMI ID in `vars.tf` matches your selected region.
@@ -310,7 +310,7 @@ terraform {
   backend "s3" {
     bucket = "<your-s3-bucket-name>"
     key    = "terraform-aws-ec2-webserver/terraform.tfstate"
-    region = "ap-south-1"
+    region = "us-east-1"
   }
 }
 ```
@@ -322,7 +322,7 @@ terraform {
 aws s3api create-bucket \
   --bucket <your-bucket-name> \
   --region ap-south-1 \
-  --create-bucket-configuration LocationConstraint=ap-south-1
+  --create-bucket-configuration LocationConstraint=us-east-1
 ```
 
 ---
