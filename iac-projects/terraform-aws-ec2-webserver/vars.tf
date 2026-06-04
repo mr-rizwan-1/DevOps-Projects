@@ -1,19 +1,29 @@
 variable "region" {
-  default = "us-east-1"
+  description = "AWS region to deploy resources"
+  default     = "us-east-1"
 }
 
 variable "zone1" {
-  default = "us-east-1a"
+  description = "Availability zone for EC2 instance"
+  default     = "us-east-1a"
 }
 
 variable "webuser" {
-  default = "ubuntu"
+  description = "SSH user for Ubuntu EC2 instance"
+  default     = "ubuntu"
 }
 
-variable "amiID" {
-  type = map(any)
-  default = {
-    "us-east-1" = "ami-0b6c6ebed2801a5cb"
-    "us-east-2" = "ami-06e3c045d79fd65d9"
-  }
+variable "my_ip" {
+  description = "Your local machine public IP in CIDR format - used to restrict SSH access"
+  type        = string
+}
+
+variable "key_name" {
+  description = "Name of the AWS key pair"
+  default = "dove-key"
+}
+
+variable "public_key_path" {
+  description = "Path to your local SSH Key file"
+  default = "~/.ssh/dove-key.pub"
 }

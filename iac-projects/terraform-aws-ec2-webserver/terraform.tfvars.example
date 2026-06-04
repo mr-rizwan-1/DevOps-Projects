@@ -1,0 +1,5 @@
+# terraform.tfvars.example
+# Copy this file to terraform.tfvars and fill in your values
+
+my_ip = "YOUR_PUBLIC_IP_HERE"   # Run: curl ifconfig.me
+public_key_path = "~/.ssh/dove-key.pub"  # Path to your SSH public key
