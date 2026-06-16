@@ -1,53 +1,48 @@
 resource "aws_instance" "Web-Server" {
-  ami                    = var.amiID[var.region] # Use the AMI ID based on the selected region
+  ami                    = data.aws_ami.amiID.id # Use the AMI ID from the data source
   instance_type          = "t3.micro"
-  key_name               = "dove-key"
+  key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.dove-sg.id]
-  availability_zone      = var.zone1 # Specify the availability zone for the instance
+  availability_zone      = var.zone1 # Specify the availability zone for the instance 
+
+  # user_data - Cleaner, safer, no SSH dependency
+  
+  user_data = file("web.sh")
+
+  # Ensure new instances are created before old one is destroyed (for zero downtime deployments)
+  # When AMI or user_data changes 
+  
+  lifecycle {
+    create_before_destroy = true
+  }
 
   tags = {
-    Name    = "Dove-Web-Server"
-    Project = "Dove-Project"
-  }
-
-  # User data script to install and start a web server (e.g., Apache)
-
-  connection {
-    type        = "ssh"
-    user        = var.webuser
-    private_key = file("dovekey")
-    host        = self.public_ip
-  }
-
-  provisioner "file" {
-    source      = "web.sh"
-    destination = "/tmp/web.sh"
-  }
-
-  provisioner "remote-exec" {
-    inline = [
-      "chmod +x /tmp/web.sh",
-      "sudo /tmp/web.sh"
-    ]
-  }
-
-  provisioner "local-exec" {
-    command = "bash Scripts/save_output.sh ${self.id} ${self.public_ip} ${self.private_ip}"
-  }
-
+      Name    = "Dove-Web-Server"
+      Project = "Dove-Project"
+    }
 }
 
-resource "aws_ec2_instance_state" "web_server_state" {
-  instance_id = aws_instance.Web-Server.id
-  state       = "running"
+#  Save instance details locally after apply
+
+resource "null_resource" "save_output" {
+  depends_on = [aws_instanece.Web-Server]
+
+  provisioner "local-exec" {
+    command = "bash Scripts/save_output.sh ${aws_instance.Web-Server.id} ${aws_instace.Web-Server.public_ip} ${aws_instance.Web-Server.private_ip} ${aws_instance.Web-Server.availability_zone}"
+  }
 }
 
 output "WebPublicIP" {
-  description = "Public IP of Ubuntu instance"
-  value       = aws_instance.Web-Server.public_ip
+  description = "Public IP of the web server - use this to access the website"
+  value = aws_instance.Web-Server.public_ip
 }
 
 output "WebPrivateIP" {
-  description = "Private IP of Ubuntu instance"
-  value       = aws_instance.Web-Server.private_ip
+  description = "Private IP of the WebServer"
+  value = "${aws_instance.Web-Server.private_ip}"
+}
+
+output "WebURL" {
+  description = "URL to access the Deployed website"
+  value = "http://${aws_instance.Web-Server.public_ip}"
 }

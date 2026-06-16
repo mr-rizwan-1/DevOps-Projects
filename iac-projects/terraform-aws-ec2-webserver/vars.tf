@@ -27,3 +27,13 @@ variable "public_key_path" {
   description = "Path to your local SSH Key file"
   default = "~/.ssh/dove-key.pub"
 }
+
+variable "environment" {
+  description = "Deployment environment name"
+  default     = "dev"
+}
+
+variable "owner" {
+  description = "Owner name or team name for resource tracking"
+  default     = "rizwaan"
+}

@@ -7,3 +7,5 @@
 .terraform.lock.hcl
 *.pub
 dovekey
+~/.ssh/
+terraform.tfvars
