@@ -9,11 +9,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket    = "terraformtfstate129"
-    key = "Terraform/ec2-webserver/terraform.tfstate"
-    region  = "us-east-1"
+    bucket         = "dove-project-tfstate"
+    key            = "Terraform/ec2-webserver/terraform.tfstate"
+    region         = "us-east-1"
     dynamodb_table = "terraform-state-lock"
-    encrypt = true
+    encrypt        = true
   }
 
 }
