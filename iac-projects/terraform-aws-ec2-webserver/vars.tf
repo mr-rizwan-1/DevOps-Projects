@@ -15,12 +15,12 @@ variable "my_ip" {
 
 variable "key_name" {
   description = "Name of the AWS key pair"
-  default = "dove-key"
+  default     = "dove-key"
 }
 
 variable "public_key_path" {
   description = "Path to your local SSH Key file"
-  default = "~/.ssh/dove-key.pub"
+  default     = "~/.ssh/dove-key.pub"
 }
 
 variable "environment" {

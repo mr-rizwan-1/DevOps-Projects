@@ -21,8 +21,8 @@ data "aws_ami" "amiID" {
 # Output blocks are used to display the results after the Terraform apply command is executed. 
 # Here, we are outputting the AMI ID that we retrieved using the data source.
 
-output "instance_id" {
-  description = "AMI ID of Ubuntu instance"
+output "latest_ami_id" {
+  description = "Latest Ubuntu 22.04 AMI ID fetched from Canonical"
   value       = data.aws_ami.amiID.id
 
 }
