@@ -8,11 +8,6 @@ variable "zone1" {
   default     = "us-east-1a"
 }
 
-variable "webuser" {
-  description = "SSH user for Ubuntu EC2 instance"
-  default     = "ubuntu"
-}
-
 variable "my_ip" {
   description = "Your local machine public IP in CIDR format - used to restrict SSH access"
   type        = string
@@ -31,6 +26,11 @@ variable "public_key_path" {
 variable "environment" {
   description = "Deployment environment name"
   default     = "dev"
+}
+
+variable "project" {
+  description = "Deployment project name"
+  default     = "Dove-Project"
 }
 
 variable "owner" {

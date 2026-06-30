@@ -3,11 +3,10 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Project     = "Dove-Project"
+      Project     = var.project
       Environment = var.environment
       ManagedBy   = "Terraform"
       Owner       = var.owner
     }
   }
 }
-#
