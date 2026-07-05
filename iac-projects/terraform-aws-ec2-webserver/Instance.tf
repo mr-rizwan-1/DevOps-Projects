@@ -25,10 +25,10 @@ resource "aws_instance" "Web-Server" {
 #  Save instance details locally after apply
 
 resource "null_resource" "save_output" {
-  depends_on = [aws_instanece.Web-Server]
+  depends_on = [aws_instance.Web-Server]
 
   provisioner "local-exec" {
-    command = "bash Scripts/save_output.sh ${aws_instance.Web-Server.id} ${aws_instace.Web-Server.public_ip} ${aws_instance.Web-Server.private_ip} ${aws_instance.Web-Server.availability_zone}"
+    command = "bash Scripts/save_output.sh ${aws_instance.Web-Server.id} ${aws_instance.Web-Server.public_ip} ${aws_instance.Web-Server.private_ip} ${aws_instance.Web-Server.availability_zone}"
   }
 }
 
