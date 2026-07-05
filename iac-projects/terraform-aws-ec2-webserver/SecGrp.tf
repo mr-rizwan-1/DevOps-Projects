@@ -1,9 +1,9 @@
 resource "aws_security_group" "dove-sg" {
-  name        = "dove-sg"
+  name        = "Dove-SG"
   description = "Security group for Dove web server - SSH restricted to admin IP, HTTP open"
 
   tags = {
-    Name    = "dove-sg"
+    Name    = "Dove-SG"
     Project = "Terraform EC2 Webserver"
   }
 }

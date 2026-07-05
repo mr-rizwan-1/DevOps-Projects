@@ -1,0 +1,3 @@
+Instance ID: i-06fdc39c89d994f94
+Public IP: 35.173.181.30
+Private IP: 172.31.33.182

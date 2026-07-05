@@ -19,6 +19,7 @@ resource "aws_instance" "Web-Server" {
   tags = {
     Name    = "Dove-Web-Server"
     Project = "Dove-Project"
+    Volume  = "Dove-Project-WebServer"
   }
 }
 
