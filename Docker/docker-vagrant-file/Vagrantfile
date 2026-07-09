@@ -1,0 +1,20 @@
+Vagrant.configure("2") do |config|
+    
+    # Common Box
+    config.vm.box = "ubuntu/jammy64"
+
+    # Docker Box
+    config.vm.define "devops-docker" do |docker|
+        docker.vm.hostname = "devops-docker"
+        docker.vm.network "private_network", ip: "192.168.56.10"
+
+        docker.vm.synced_folder "../", "/workspace"
+        docker.vm.provision "shell", path: "../setups-scripts/docker-setup.sh"
+
+        docker.vm.provider "virtualbox" do |vb|
+            vb.name = "devops-docker"
+            vb.memory = 2048
+            vb.cpus = 2
+        end
+    end
+end
