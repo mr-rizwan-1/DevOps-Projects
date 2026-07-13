@@ -25,5 +25,3 @@ if [ "$alert_count" -ne 0 ]; then
     echo "Total Alerts: $alert_count"
     echo "Log saved: $LOGFILE"
 fi
-
-
