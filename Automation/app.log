@@ -1,0 +1,20 @@
+2026-07-10 14:30:01 INFO Application started successfully
+2026-07-10 14:30:02 INFO Database connection established
+2026-07-10 14:30:03 INFO User login: admin
+2026-07-10 14:30:04 ERROR Database connection failed
+2026-07-10 14:30:05 INFO Request processed successfully
+2026-07-10 14:30:06 CRITICAL Service unreachable
+2026-07-10 14:30:07 INFO Health check passed
+2026-07-10 14:30:08 ERROR Timeout on request
+2026-07-10 14:30:09 ERROR Null pointer exception in module auth
+2026-07-10 14:30:10 INFO Cache refreshed
+2026-07-10 14:30:11 ERROR Disk I/O error on /dev/sda
+2026-07-10 14:30:12 CRITICAL Memory limit exceeded
+2026-07-10 14:30:13 INFO Scheduled job started
+2026-07-10 14:30:14 ERROR Failed to write to database
+2026-07-10 14:30:15 INFO User logout: admin
+2026-07-10 14:30:16 ERROR Connection refused on port 5432
+2026-07-10 14:30:17 INFO Backup completed
+2026-07-10 14:30:18 CRITICAL CPU spike detected
+2026-07-10 14:30:19 INFO Request processed successfully
+2026-07-10 14:30:20 ERROR Service timeout after 30s
