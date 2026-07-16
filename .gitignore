@@ -10,3 +10,4 @@
 dovekey
 ~/.ssh/
 terraform.tfvars
+venv/

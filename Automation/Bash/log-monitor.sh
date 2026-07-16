@@ -22,7 +22,7 @@ current_start_time=$(date +%s)
         fi
 
         trap 'echo "" | tee -a "$LOGFILE";
-        echo -e "\t\t\t${HEADERS[0]} $(date +%F %T)" | tee -a "$LOGFILE";
+        echo -e "\t\t\t${HEADERS[0]} $(date "+%F %T")" | tee -a "$LOGFILE";
         echo -e "\tTotal Errors: ${COLOR[1]}${COLOR[3]}$TOTAL_ERRORS${COLOR[2]}" | tee -a "$LOGFILE";
         echo -e "\tError log saved: $LOGFILE" | tee -a "$LOGFILE";
 

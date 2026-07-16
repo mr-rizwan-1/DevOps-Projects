@@ -1,0 +1,131 @@
+			=== Monitor Started === 2026-07-16 08:43:31
+
+[31m2026-07-10 08:42:39 ERROR New error occurred[0m
+[31m2026-07-10 08:42:42 CRITICAL Critical issue found[0m
+[31m2026-07-10 08:42:45 ERROR New error occurred[0m
+[31m2026-07-10 08:42:48 CRITICAL Critical issue found[0m
+[31m2026-07-10 08:42:51 ERROR New error occurred[0m
+[31m2026-07-10 08:42:54 CRITICAL Critical issue found[0m
+[31m2026-07-10 08:42:57 ERROR New error occurred[0m
+[31m2026-07-10 08:43:39 ERROR New error occurred[0m
+[31m2026-07-10 08:43:42 CRITICAL Critical issue found[0m
+[31m2026-07-10 08:43:45 ERROR New error occurred[0m
+[31m2026-07-10 08:43:48 CRITICAL Critical issue found[0m
+[31m2026-07-10 08:43:51 ERROR New error occurred[0m
+[31m2026-07-10 08:43:54 CRITICAL Critical issue found[0m
+[31m2026-07-10 08:43:57 ERROR New error occurred[0m
+[31m2026-07-10 08:44:00 CRITICAL Critical issue found[0m
+[31m2026-07-10 08:44:03 ERROR New error occurred[0m
+[31m2026-07-10 08:44:06 CRITICAL Critical issue found[0m
+[31m2026-07-10 08:44:09 ERROR New error occurred[0m
+
+			=== Monitor Stopped === 2026-07-16 08:44:09
+	Total Errors: [32m[1m18[0m
+	Error log saved: error_monitor_20260716.log
+[31m[1mHIGH ALERT:[0m Too many errors detected in last 60 seconds!
+		=== Monitor Started === 2026-07-16 09:57:50
+
+[31m[2026-07-16 09:57:50] 2026-07-10 08:43:54 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:57:50] 2026-07-10 08:43:57 ERROR New error occurred[0m
+[31m[2026-07-16 09:57:50] 2026-07-10 08:44:00 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:57:50] 2026-07-10 08:44:03 ERROR New error occurred[0m
+[31m[2026-07-16 09:57:50] 2026-07-10 08:44:06 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:57:50] 2026-07-10 08:44:09 ERROR New error occurred[0m
+[31m[2026-07-16 09:57:50] 2026-07-10 08:44:12 CRITICAL Critical issue found[0m
+
+		=== Monitor Stopped === 2026-07-16 09:58:00
+	Total Errors: [32m[1m7[0m
+		=== Monitor Started === 2026-07-16 09:58:50
+
+[31m[2026-07-16 09:58:50] 2026-07-10 08:44:00 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:58:50] 2026-07-10 08:44:03 ERROR New error occurred[0m
+[31m[2026-07-16 09:58:50] 2026-07-10 08:44:06 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:58:50] 2026-07-10 08:44:09 ERROR New error occurred[0m
+[31m[2026-07-16 09:58:50] 2026-07-10 08:44:12 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:58:50] 2026-07-10 09:58:45 ERROR New error occurred[0m
+[31m[2026-07-16 09:58:50] 2026-07-10 09:58:48 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:58:51] 2026-07-10 09:58:51 ERROR New error occurred[0m
+[31m[2026-07-16 09:58:54] 2026-07-10 09:58:54 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:58:57] 2026-07-10 09:58:57 ERROR New error occurred[0m
+[31m[2026-07-16 09:59:00] 2026-07-10 09:59:00 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:59:03] 2026-07-10 09:59:03 ERROR New error occurred[0m
+[31m[2026-07-16 09:59:06] 2026-07-10 09:59:06 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:59:09] 2026-07-10 09:59:09 ERROR New error occurred[0m
+[31m[2026-07-16 09:59:12] 2026-07-10 09:59:12 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:59:15] 2026-07-10 09:59:15 ERROR New error occurred[0m
+[31m[2026-07-16 09:59:18] 2026-07-10 09:59:18 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:59:21] 2026-07-10 09:59:21 ERROR New error occurred[0m
+[31m[2026-07-16 09:59:24] 2026-07-10 09:59:24 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:59:27] 2026-07-10 09:59:27 ERROR New error occurred[0m
+[31m[2026-07-16 09:59:30] 2026-07-10 09:59:30 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:59:33] 2026-07-10 09:59:33 ERROR New error occurred[0m
+[31m[2026-07-16 09:59:36] 2026-07-10 09:59:36 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:59:39] 2026-07-10 09:59:39 ERROR New error occurred[0m
+[31m[2026-07-16 09:59:42] 2026-07-10 09:59:42 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:59:45] 2026-07-10 09:59:45 ERROR New error occurred[0m
+[31m[2026-07-16 09:59:48] 2026-07-10 09:59:48 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:59:51] 2026-07-10 09:59:51 ERROR New error occurred[0m
+[31m[1mHIGH ALERT: Too many errors in last 60 seconds![0m
+[31m[2026-07-16 09:59:54] 2026-07-10 09:59:54 CRITICAL Critical issue found[0m
+[31m[2026-07-16 09:59:57] 2026-07-10 09:59:57 ERROR New error occurred[0m
+[31m[2026-07-16 10:00:00] 2026-07-10 10:00:00 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:00:03] 2026-07-10 10:00:03 ERROR New error occurred[0m
+[31m[2026-07-16 10:00:06] 2026-07-10 10:00:06 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:00:09] 2026-07-10 10:00:09 ERROR New error occurred[0m
+[31m[2026-07-16 10:00:12] 2026-07-10 10:00:12 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:00:15] 2026-07-10 10:00:15 ERROR New error occurred[0m
+[31m[2026-07-16 10:00:18] 2026-07-10 10:00:18 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:00:21] 2026-07-10 10:00:21 ERROR New error occurred[0m
+[31m[2026-07-16 10:00:24] 2026-07-10 10:00:24 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:00:27] 2026-07-10 10:00:27 ERROR New error occurred[0m
+[31m[2026-07-16 10:00:31] 2026-07-10 10:00:30 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:00:34] 2026-07-10 10:00:34 ERROR New error occurred[0m
+[31m[2026-07-16 10:00:37] 2026-07-10 10:00:37 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:00:40] 2026-07-10 10:00:40 ERROR New error occurred[0m
+[31m[2026-07-16 10:00:43] 2026-07-10 10:00:43 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:00:46] 2026-07-10 10:00:46 ERROR New error occurred[0m
+[31m[2026-07-16 10:00:49] 2026-07-10 10:00:49 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:00:52] 2026-07-10 10:00:52 ERROR New error occurred[0m
+[31m[1mHIGH ALERT: Too many errors in last 60 seconds![0m
+[31m[2026-07-16 10:00:55] 2026-07-10 10:00:55 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:00:58] 2026-07-10 10:00:58 ERROR New error occurred[0m
+[31m[2026-07-16 10:01:01] 2026-07-10 10:01:01 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:01:04] 2026-07-10 10:01:04 ERROR New error occurred[0m
+[31m[2026-07-16 10:01:07] 2026-07-10 10:01:07 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:01:10] 2026-07-10 10:01:10 ERROR New error occurred[0m
+[31m[2026-07-16 10:01:13] 2026-07-10 10:01:13 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:01:16] 2026-07-10 10:01:16 ERROR New error occurred[0m
+[31m[2026-07-16 10:01:19] 2026-07-10 10:01:19 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:01:22] 2026-07-10 10:01:22 ERROR New error occurred[0m
+[31m[2026-07-16 10:01:25] 2026-07-10 10:01:25 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:01:28] 2026-07-10 10:01:28 ERROR New error occurred[0m
+[31m[2026-07-16 10:01:31] 2026-07-10 10:01:31 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:01:34] 2026-07-10 10:01:34 ERROR New error occurred[0m
+[31m[2026-07-16 10:01:37] 2026-07-10 10:01:37 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:01:40] 2026-07-10 10:01:40 ERROR New error occurred[0m
+[31m[2026-07-16 10:01:43] 2026-07-10 10:01:43 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:01:46] 2026-07-10 10:01:46 ERROR New error occurred[0m
+[31m[2026-07-16 10:01:49] 2026-07-10 10:01:49 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:01:52] 2026-07-10 10:01:52 ERROR New error occurred[0m
+[31m[1mHIGH ALERT: Too many errors in last 60 seconds![0m
+[31m[2026-07-16 10:01:55] 2026-07-10 10:01:55 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:01:58] 2026-07-10 10:01:58 ERROR New error occurred[0m
+[31m[2026-07-16 10:02:01] 2026-07-10 10:02:01 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:02:04] 2026-07-10 10:02:04 ERROR New error occurred[0m
+[31m[2026-07-16 10:02:07] 2026-07-10 10:02:07 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:02:10] 2026-07-10 10:02:10 ERROR New error occurred[0m
+[31m[2026-07-16 10:02:13] 2026-07-10 10:02:13 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:02:16] 2026-07-10 10:02:16 ERROR New error occurred[0m
+[31m[2026-07-16 10:02:19] 2026-07-10 10:02:19 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:02:22] 2026-07-10 10:02:22 ERROR New error occurred[0m
+[31m[2026-07-16 10:02:25] 2026-07-10 10:02:25 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:02:28] 2026-07-10 10:02:28 ERROR New error occurred[0m
+[31m[2026-07-16 10:02:31] 2026-07-10 10:02:31 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:02:34] 2026-07-10 10:02:34 ERROR New error occurred[0m
+[31m[2026-07-16 10:02:37] 2026-07-10 10:02:37 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:02:40] 2026-07-10 10:02:40 ERROR New error occurred[0m
+[31m[2026-07-16 10:02:43] 2026-07-10 10:02:43 CRITICAL Critical issue found[0m
+[31m[2026-07-16 10:02:46] 2026-07-10 10:02:46 ERROR New error occurred[0m
+
+		=== Monitor Stopped === 2026-07-16 10:02:47
+	Total Errors: [32m[1m86[0m
