@@ -1,20 +1,36 @@
 Vagrant.configure("2") do |config|
     
     # Common Box
-    config.vm.box = "ubuntu/jammy64"
+    # config.vm.box = "ubuntu/jammy64"
 
     # Docker Box
     config.vm.define "devops-docker" do |docker|
+        docker.vm.box = "ubuntu/jammy64"
         docker.vm.hostname = "devops-docker"
         docker.vm.network "private_network", ip: "192.168.56.10"
 
         docker.vm.synced_folder "../", "/workspace"
-        docker.vm.provision "shell", path: "../setups-scripts/docker-setup.sh"
+        docker.vm.provision "shell", path: "../setups-scripts/docker-setup-ubuntu.sh"
 
         docker.vm.provider "virtualbox" do |vb|
             vb.name = "devops-docker"
             vb.memory = 2048
             vb.cpus = 2
+        end
+    end
+
+    config.vm.define "devops-centos" do |centos|
+        centos.vm.box = "centos/7"
+        centos.vm.hostname = "devops-centos"
+        centos.vm.network "private_network", ip: "192.168.56.11"
+
+        # centos.vm.synced_folder "../", "/centos-workspace"
+        # centos.vm.provision "shell", path: "../setups-scripts/docker-setup-centos.sh"
+
+        centos.vm.provider "virtualbox" do |vb|
+            vb.name = "devops-centos"
+            vb.memory = 1024    
+            vb.cpus = 1
         end
     end
 end
